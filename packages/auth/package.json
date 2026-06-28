@@ -1,0 +1,14 @@
+{
+  "name": "@ats/auth",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "dependencies": {
+    "@ats/db": "*",
+    "jose": "^5.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

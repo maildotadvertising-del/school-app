@@ -1,0 +1,74 @@
+/* ATS Connect — Glass Theme (Light): Primary Purple, Secondary Orange */
+:root {
+  --ats-purple: #a855f7;
+  --ats-purple-dark: #7c3aed;
+  --ats-purple-deep: #581c87;
+  --ats-orange: #f97316;
+  --ats-orange-light: #fdba74;
+  --ats-orange-dark: #ea580c;
+  --ats-ink: #2d2440;
+  --ats-muted: #756a8f;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(249, 115, 22, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 30% 90%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(124, 58, 237, 0.14) 0%, transparent 50%),
+    linear-gradient(160deg, #fbf8ff 0%, #f3eefc 55%, #fff7f0 100%);
+  min-height: 100vh;
+  color: var(--ats-ink);
+}
+
+.glass-topbar {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 20px rgba(150, 120, 200, 0.12);
+  border-radius: 22px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(120, 90, 180, 0.12);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 20px rgba(150, 120, 200, 0.12);
+  border-radius: 22px;
+}
+
+.tag-purple {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.95), rgba(124, 58, 237, 0.95));
+  color: #fff;
+}
+
+.tag-orange {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.95), rgba(234, 88, 12, 0.95));
+  color: #fff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--ats-purple), var(--ats-orange));
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 26px rgba(168, 85, 247, 0.35);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+}
+
+.fab {
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--ats-purple), var(--ats-orange));
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(168, 85, 247, 0.35);
+}
