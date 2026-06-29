@@ -1,3 +1,4 @@
+export const schema = `
 CREATE TABLE IF NOT EXISTS admins (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL,
@@ -90,3 +91,4 @@ CREATE TABLE IF NOT EXISTS push_subscriptions (
   auth TEXT NOT NULL,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+`;

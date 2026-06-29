@@ -1,6 +1,6 @@
 import Database from "better-sqlite3";
 import path from "path";
-import fs from "fs";
+import { schema } from "./schema";
 
 const dbPath = process.env.DATABASE_FILE || path.resolve(process.cwd(), "../../packages/db/dev.db");
 
@@ -10,7 +10,6 @@ function init() {
   const db = new Database(dbPath);
   db.pragma("journal_mode = WAL");
   db.pragma("foreign_keys = ON");
-  const schema = fs.readFileSync(path.join(__dirname, "schema.sql"), "utf-8");
   db.exec(schema);
   return db;
 }
