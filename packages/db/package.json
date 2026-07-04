@@ -1,0 +1,18 @@
+{
+  "name": "@ats/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "seed": "tsx seed/seed.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}
