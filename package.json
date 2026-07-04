@@ -11,5 +11,9 @@
     "dev:teacher": "npm run dev -w apps/teacher",
     "dev:student": "npm run dev -w apps/student",
     "db:seed": "npm run seed -w packages/db"
+  },
+  "dependencies": {
+    "@types/web-push": "^3.6.4",
+    "web-push": "^3.6.7"
   }
 }

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { TopBar, BottomNav } from "@ats/ui";
 import { logout } from "@/app/logout/actions";
+import PushInit from "@/components/PushInit";
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
@@ -21,6 +22,7 @@ export function Shell({
 }) {
   return (
     <div className="flex-1 pb-24">
+      <PushInit />
       <TopBar
         title={title}
         subtitle={subtitle}

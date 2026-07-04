@@ -11,6 +11,7 @@
   "dependencies": {
     "@ats/auth": "*",
     "@ats/db": "*",
+    "@ats/push": "*",
     "@ats/ui": "*",
     "next": "16.2.9",
     "react": "19.2.4",
